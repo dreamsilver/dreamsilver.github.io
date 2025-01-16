@@ -1,0 +1,106 @@
+﻿[Log](2025-01-16 11:13:10:6382) [UIManager]Init
+UnityEngine.Debug:Log (object)
+UIManager:Init () (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:93)
+SoftwareInit:InitAppInfo (ChannelEnum) (at Assets/0Src/Logic/GlobalData/SoftwareGlobal/SoftwareInit.cs:18)
+AppLaunch:Awake () (at Assets/0Src/Logic/Launch/AppLaunch.cs:18)
+
+[Log](2025-01-16 11:13:10:6417) [DataController]InitData
+UnityEngine.Debug:Log (object)
+DataController:InitData () (at Assets/0New/Framework/DataSystem/DataController.cs:18)
+SoftwareInit:InitAppInfo (ChannelEnum) (at Assets/0Src/Logic/GlobalData/SoftwareGlobal/SoftwareInit.cs:19)
+AppLaunch:Awake () (at Assets/0Src/Logic/Launch/AppLaunch.cs:18)
+
+[Log](2025-01-16 11:13:10:6427) [LoadAssetMgr]InitAgent
+UnityEngine.Debug:Log (object)
+B.LoadAssetMgr:InitAgent (bool) (at Assets/0Create/A/LoadAssetRes/LoadAsset/Asset/LoadAssetMgr.cs:29)
+SoftwareInit:InitAppInfo (ChannelEnum) (at Assets/0Src/Logic/GlobalData/SoftwareGlobal/SoftwareInit.cs:20)
+AppLaunch:Awake () (at Assets/0Src/Logic/Launch/AppLaunch.cs:18)
+
+[Warning](2025-01-16 11:13:10:6442) E:/WorkSpace/AIProduct/AILab/AILab_Client_2019/Assets/StreamingAssets/cfg/cfg.txt 不存在！
+UnityEngine.Debug:LogWarning (object)
+DeviceLaunch:GetTargetHostUrl (string,System.Action`1<string>) (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:181)
+DeviceLaunch:GetHostUrl () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:160)
+DeviceLaunch:Awake () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:40)
+
+[Log](2025-01-16 11:13:11:0302) [UIManager]ShowFrontPageUI>>scene:default,ui:VersionUpdatePanel
+UnityEngine.Debug:Log (object)
+UIManager:ShowFrontPageUI (string,string,string,Data,ILoadUIPanelBaseInterface,UnityEngine.Events.UnityAction`1<UIPanelBase>) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:199)
+VisualEditorLaunch:OnStart () (at Assets/0Src/Logic/Launch/VisualEditorLaunch.cs:24)
+DeviceLaunch:AppStart () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:54)
+DeviceLaunch/<CheckNetState>d__7:MoveNext () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:94)
+UnityEngine.GUIUtility:ProcessEvent (int,intptr)
+
+[Log](2025-01-16 11:13:11:2057) [[VisualEditorLaunch]OnStart>>load VersionUpdatePanel finish.
+UnityEngine.Debug:Log (object)
+VisualEditorLaunch/<>c:<OnStart>b__2_0 (UIPanelBase) (at Assets/0Src/Logic/Launch/VisualEditorLaunch.cs:26)
+UIManager/<>c__DisplayClass38_0:<OpenUI>g___CreatTargetUI|0 () (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:402)
+UIManager/<>c__DisplayClass38_0:<OpenUI>b__2 () (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:412)
+UIManager:IsSwitchScene (string,UnityEngine.Events.UnityAction,UnityEngine.Events.UnityAction) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:495)
+UIManager:OpenUI (string,string,string,Data,ILoadUIPanelBaseInterface,UnityEngine.Events.UnityAction`1<UIPanelBase>) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:407)
+UIManager:ShowFrontPageUI (string,string,string,Data,ILoadUIPanelBaseInterface,UnityEngine.Events.UnityAction`1<UIPanelBase>) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:202)
+VisualEditorLaunch:OnStart () (at Assets/0Src/Logic/Launch/VisualEditorLaunch.cs:24)
+DeviceLaunch:AppStart () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:54)
+DeviceLaunch/<CheckNetState>d__7:MoveNext () (at Assets/0Src/Logic/Launch/DeviceLaunch.cs:94)
+UnityEngine.GUIUtility:ProcessEvent (int,intptr)
+
+[Log](2025-01-16 11:13:11:3917) jsonData == {"dataContent":{"lastVersion":{"createdAt":"2024-11-08 10:56:05","createdBy":"BL20221230112605","id":29,"necessary":0,"path":"http://hltfile.ar-max.com/file
+s/oms/forever/builder/1.0.8/20241108105603/XRInspiro_1.0.8.zip","remarks":"1.0.8","status":1,"type":1,"version":"1.0.8"},"necessaryVersion":null},"returnCode":"1","returnMsg":"操作成功"}
+UnityEngine.Debug:Log (object)
+VersionUpdateData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/Data/VersionUpdateData.cs:25)
+NetData:ParseJsonDataWithError (string,string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:139)
+HttpClientController/<SendHttpWebRequest>d__13:MoveNext () (at Assets/0New/Framework/NetworkSystem/Http/HttpClientController.cs:72)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+[Log](2025-01-16 11:13:11:4042) 当前版本:3.3.3...服务器最新版本:1.0.8
+UnityEngine.Debug:Log (object)
+WinVersionUpdateCtrl:CheckVersion (AILab.S2C_VersionLatest_Data/S2C_Data,bool&,bool&) (at Assets/0New/BusinessLogic/VisualEditor/PC/Module/VersionUpdatePanel/WinVersionUpdateCtrl.cs:401)
+WinVersionUpdateCtrl:<CheckVersion>b__27_0 () (at Assets/0New/BusinessLogic/VisualEditor/PC/Module/VersionUpdatePanel/WinVersionUpdateCtrl.cs:201)
+NetData:CheckRequestStatus () (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:174)
+NetData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:154)
+VersionUpdateData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/Data/VersionUpdateData.cs:27)
+NetData:ParseJsonDataWithError (string,string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:139)
+HttpClientController/<SendHttpWebRequest>d__13:MoveNext () (at Assets/0New/Framework/NetworkSystem/Http/HttpClientController.cs:72)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+[Log](2025-01-16 11:13:11:4082) [WinVersionUpdateCtrl]CheckVersion>>needUpdate:False,mFocre:False
+UnityEngine.Debug:Log (object)
+WinVersionUpdateCtrl:<CheckVersion>b__27_0 () (at Assets/0New/BusinessLogic/VisualEditor/PC/Module/VersionUpdatePanel/WinVersionUpdateCtrl.cs:203)
+NetData:CheckRequestStatus () (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:174)
+NetData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:154)
+VersionUpdateData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/Data/VersionUpdateData.cs:27)
+NetData:ParseJsonDataWithError (string,string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:139)
+HttpClientController/<SendHttpWebRequest>d__13:MoveNext () (at Assets/0New/Framework/NetworkSystem/Http/HttpClientController.cs:72)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+[Log](2025-01-16 11:13:11:4097) [UIManager]ShowUI>>_currentUI:VersionUpdatePanel,ui:LoginPanel
+UnityEngine.Debug:Log (object)
+UIManager:ShowUI (string,Data,ILoadUIPanelBaseInterface) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:236)
+UIManager:ShowUI (string,ILoadUIPanelBaseInterface) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:212)
+WinVersionUpdateCtrl/<>c:<VersionUpdataStart>b__25_0 () (at Assets/0New/BusinessLogic/VisualEditor/PC/Module/VersionUpdatePanel/WinVersionUpdateCtrl.cs:139)
+WinVersionUpdateCtrl:<CheckVersion>b__27_0 () (at Assets/0New/BusinessLogic/VisualEditor/PC/Module/VersionUpdatePanel/WinVersionUpdateCtrl.cs:212)
+NetData:CheckRequestStatus () (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:174)
+NetData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:154)
+VersionUpdateData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/Data/VersionUpdateData.cs:27)
+NetData:ParseJsonDataWithError (string,string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:139)
+HttpClientController/<SendHttpWebRequest>d__13:MoveNext () (at Assets/0New/Framework/NetworkSystem/Http/HttpClientController.cs:72)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+[Log](2025-01-16 11:13:17:2472) [UIManager]ShowUI>>_currentUI:LoginPanel,ui:MenuTapPagePanel_AILab
+UnityEngine.Debug:Log (object)
+UIManager:ShowUI (string,Data,ILoadUIPanelBaseInterface) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:236)
+UIManager:ShowUI (string,ILoadUIPanelBaseInterface) (at Assets/0New/Framework/UISystem/UIManagerV2/UIManager.cs:212)
+LoginCtrl:LoginSucc () (at Assets/0New/AI/Logic/UI/AILab/Login/LoginCtrl.cs:116)
+LoginCtrl:<LoginClick>b__29_0 () (at Assets/0New/AI/Logic/UI/AILab/Login/LoginCtrl.cs:94)
+NetData:CheckRequestStatus () (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:174)
+NetData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:154)
+LoginData:ParseJsonData (string,string) (at Assets/0New/Framework/DataSystem/Data/LoginData.cs:24)
+NetData:ParseJsonDataWithError (string,string,string) (at Assets/0New/Framework/DataSystem/BaseClass/NetData.cs:139)
+HttpClientController/<SendHttpWebRequest>d__13:MoveNext () (at Assets/0New/Framework/NetworkSystem/Http/HttpClientController.cs:72)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+[Warning](2025-01-16 11:13:31:4118) Visual Studio Editor Package version 2.0.22 is available, we strongly encourage you to update from the Unity Package Manager for a better Visual Studio integration
+UnityEngine.Debug:LogWarning (object)
+Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration:HandleListRequestCompletion () (at Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/VisualStudioIntegration.cs:149)
+Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration:OnUpdate () (at Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/VisualStudioIntegration.cs:160)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
